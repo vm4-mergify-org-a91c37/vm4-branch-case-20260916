@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: exact uppercase Release base sentinel
+    conditions:
+      - base = Release
+      - -label = vm4-case-hit
+    actions:
+      label:
+        add:
+          - vm4-case-hit
